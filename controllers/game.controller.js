@@ -7,7 +7,6 @@ const Players = require("../models/players.model")
 exports.gameCreateCntrl = async (req, res, next) => {
     try {
         const {gameName,questions} = req.body;
-        console.log(req.payload)
         const {_id:_owner} = req.payload
 
 

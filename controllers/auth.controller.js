@@ -134,7 +134,6 @@ exports.loginCtrl = async(req,res,next)=>{
             const payload = { _id,email,username,fullName}
 
             //crear el JWT
-            console.log(payload)
             const authToken = jwt.sign(
                 payload,
                 process.env.TOKEN_SECRET,
